@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+body {
+  margin: 0;
+  background-image: url("images/bg.png");
+  /* The image used */
+  background-position: center;
+  /* Center the image */
+  background-repeat: repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  border-top: 18px solid;
+  border-color: rgb(204, 0, 0);
+  
+}
+
+.state span {
+  font-size: 12px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 2.3rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #FFF;
+}
+
+.icons {
+  display: flex;
+  /* establish flex container */
+  flex-direction: row;
+  /* make main axis vertical */
+  justify-content: center;
+  /* center items vertically, in this case */
+  align-items: center;
+  /* center items horizontally, in this case */
+  height: 40vh;
+}
+
+.trybtn {
+  display: flex;
+  /* establish flex container */
+  flex-direction: row;
+  /* make main axis vertical */
+  justify-content: center;
+  /* center items vertically, in this case */
+  align-items: center;
+  /* center items horizontally, in this case */
+  margin-top: 6rem;
+}
+
+.trybtn span {
+  background: rgb(181, 212, 176);
+  padding: 0.8rem 2rem;
+  border-radius: 21px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.trybtn span:hover {
+  opacity: 0.8;
+}
+
+.trybtn span img {
+  margin-left: .5rem;
+}
+
+.icons small {
+  font-size: 9px !important;
+}
+
+.border-1 {
+  position: absolute;
+  left: 14rem;
+  top: -3px;
+  color: #FFF;
+}
+
+.border-2 {
+  position: absolute;
+  right: 14rem;
+  top: -3px;
+  color: #FFF;
+}
+
+.icons span {
+  border-radius: 50%;
+  /* padding: 1rem 2rem; */
+  background-color: #FFF;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(204, 0, 0);
+  margin-right: 1.5rem;
+  transition: padding 2s;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1.5rem;
+}
+
+.icons span:hover {
+  padding: 2rem 3rem;
+}
+
+.icons span img {
+  margin-top: 1rem;
+  vertical-align: middle;
+}
+
+.state {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  color: #FFF;
+}
+
+/*Slider css starts*/
+
+.ui-slider, .ui-slider, .ui-slider .ui-slider-range {
+  height: 18px;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin-top: 50px;
+}
+
+#slider-container {
+  width: 43rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ui-slider {
+  background-color: #1ABC9C;
+  background-image: -webkit-linear-gradient(left, #1ABC9C 0%, #F1C40F 50%, #E74C3C 100%);
+  background-image: linear-gradient(to right, #C37562 0%, #C3403A 50%, #C30F10 100%);
+  border: 5px solid;
+  border-color: rgb(198 208 194);
+}
+
+.ui-slider * {
+  outline: none;
+}
+
+.ui-slider .slider-range-inverse {
+  background: #CCC;
+  position: absolute;
+  right: 0;
+}
+
+.ui-slider .ui-slider-range {
+  background: transparent;
+}
+
+.ui-slider .ui-slider-handle {
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  background: #FFF;
+  top: -20px;
+  border-radius: 50%;
+  border-width: 0;
+}
+
+.ui-slider .ui-slider-handle:active {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+/*.ui-slider .ui-slider-handle .dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: transparent;
+  overflow: hidden;
+}*/
+
+.reset {
+  left: 16% !important;
+}
+
+.dot {
+  background: #C30F10;
+  display: inline-block;
+  height: 19px;
+  position: relative;
+  width: 16px;
+  box-shadow: 0px 0 5px #fff;
+}
+
+.dot:before {
+  border-top: 14px solid #C30F10;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 18px;
+  width: 0;
+}
+
+/*.ui-slider .ui-slider-handle .dot .handle-track {
+  display: block;
+  height: 18px;
+  background-color: #C30F10;
+  background-image: #C30F10;
+  position: absolute;
+  padding-right: 18px;
+}*/
+
+/* Slider css ends */
+
+@media only screen and (max-device-width: 630px) {
+  .icons span {
+    border-radius: 50%;
+    background-color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(204, 0, 0);
+    transition: padding 2s;
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 5%;
+  }
+  .icons small {
+    font-size: 4vw !important;
+  }
+  #slider-container {
+    width: 90%;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .icons span img {
+    margin-top: 3rem;
+    vertical-align: middle;
+    width: 7rem;
+  }
+  .state span {
+    font-size: 26px;
+  }
+  .title {
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  .trybtn span {
+    padding: 2rem 3rem;
+    border-radius: 42px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .icons span {
+    border-radius: 50%;
+    background-color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(204, 0, 0);
+    transition: padding 2s;
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 5%;
+  }
+  .icons small {
+    font-size: 4vw !important;
+  }
+  #slider-container {
+    width: 90%;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .icons span img {
+    margin-top: 3rem;
+    vertical-align: middle;
+    width: 7rem;
+  }
+  .state span {
+    font-size: 18px;
+  }
+  .title {
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  .trybtn span {
+    padding: 1rem 2rem;
+    border-radius: 42px;
+    font-size: 30px;
+  }
+  .trybtn span img {
+    margin-left: .5rem;
+    vertical-align: middle;
+  }
+  .border-1 {
+    left: 9.5rem;
+  }
+  .border-2 {
+    position: absolute;
+    right: 9.5rem;
+  }
+}
